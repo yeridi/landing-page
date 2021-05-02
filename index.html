@@ -7,9 +7,11 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <style>
     *{
+        text-decoration: none;
         margin: 0;
         padding: 0;
         font-family: 'Roboto', sans-serif;
@@ -29,8 +31,16 @@
         align-items: center;
         justify-content: center;
     }
+    .information{
+        height: 100vh;
+        width: 50%;
+        position: absolute;
+        background-color: rgba(208, 0, 255, 0.205);
+        opacity: 0;
+        transition: all 1s;
+    }
     .text:hover .information{
-
+        opacity: 1;
     }
     .text__content{
         width: 80%;
@@ -62,6 +72,32 @@
             background-position: top right;
         }
     }
+    .icons{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    a{
+        transition: 1s all;
+        color: rgb(110, 110, 110);
+    }
+    a:hover{
+        color: #000;
+    }
+    .icons i{
+        font-size: 50px;
+    }
+    .name{
+        position: absolute;
+        bottom: 3%;
+        width: 100%;
+    }
+    .name__personal{
+        text-align: center;
+        font-size: 40px;
+        color: gb(110, 110, 110);
+    }
 
 </style>
 <body>
@@ -73,7 +109,15 @@
                 <button>Go to NoWhere</button>
             </div>
             <div class="information">
-
+                <div class="icons">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-discord"></i></a>
+                </div>
+                <div class="name">
+                    <h1 class="name__personal">Yeridi Crhis Huaman Taquire</h1>
+                </div>
             </div>
         </div>
     </div>
